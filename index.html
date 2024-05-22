@@ -4,64 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>千葉県オープンデータコネクテッドアイデアソン</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <nav class="menuber"></nav>
         <img src="source/logo_wide_white.png" alt="千葉県オープンデータコネクテッドアイデアソンのロゴ（白）">
-        <div class="nav">
+        <nav class="header-menu pc">
             <ul>
-                <li>概要</li>
-                <li>全体の流れ</li>
-                <li>主催・協賛</li>
+                <li><a href="#about">概要</a></li>
+                <li><a href="#flow">全体の流れ</a></li>
+                <li><a href="#company">主催・協賛</a></li>
             </ul>
-            <button class="form-btn">申し込みはこちら</button>
-        </div>
+            <div class="btn">
+                <a href="#" class="form-btn btn-yellow">申し込みはこちら</a>
+            </div>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <div class="hero_content flex">
-                <img src="source/logo_wide.png" alt="千葉県オープンデータコネクテッドアイデアソンのロゴ">
-                <h1 class="size48 catchcopy">繋がる・広がる<br>君のアイデアで</h1>
+            <div class="hero_container flex">
+                <div class="hero_container-item"><img src="source/logo_wide.png" alt="千葉県オープンデータコネクテッドアイデアソンのロゴ"></div>
+                <div class="hero_container-item"><h1 class="size48 catchcopy">繋がる・広がる<br>君のアイデアで</h1></div>
             </div>
             <img src="source/top_lineart.png" alt="人々のラインアート">
-            <div class="form-icon">
+            <a class="form-icon" href="#">
                 <img src="source/icon_moushikomi.png" alt="申し込みフォームのアイコン">
-            </div>
+            </a>
         </section>
-        <section class="about">
-            <h1 class="size28">千葉県オープンデータ<br>コネクテッドアイデアソン</h1>
-            <img src="source/video_block.png" alt="ダミー">
-            <h4 class="size24">目的</h4>
-            <p>千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について</p>
-            <h4 class="size24">解決してほしい課題</h4>
-            <div class="flex">
-                <div class="kadai">
-                    <img src="source/icon_bousai.png" alt="防災のイメージイラスト">
-                    <div class="kadai-explanation">
-                        <p class="explanation-title">防災</p>
-                        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-                        <a class="external-link" href="">詳しい課題内容はこちら</a>
+    
+        <section class="about" id="#about">
+            <div class="line-side maxw-740 lr-center">
+                <h1 class="size48">千葉県オープンデータ<br>コネクテッドアイデアソン</h1>
+                <img src="source/video_block.png" alt="ダミー">
+                <h4 class="size24">目的</h4>
+                <p>千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について</p>
+                <h4 class="size24">解決してほしい課題</h4>
+                <div class="flex">
+                    <div class="kadai">
+                        <img src="source/icon_bousai.png" alt="防災のイメージイラスト">
+                        <div class="kadai-explanation">
+                            <p class="explanation-title">防災</p>
+                            <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+                            <a class="external-link" href="">詳しい課題内容はこちら</a>
+                        </div>
+                    </div>
+                    <div class="kadai">
+                        <img src="source/icon_tiikishinkou.png" alt="地域振興のイメージイラスト">
+                        <div class="kadai-explanation">
+                            <p class="explanation-title">地域振興</p>
+                            <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+                            <a class="external-link" href="">詳しい課題内容はこちら</a>
+                        </div>
                     </div>
                 </div>
-                <div class="kadai">
-                    <img src="source/icon_tiikishinkou.png" alt="地域振興のイメージイラスト">
-                    <div class="kadai-explanation">
-                        <p class="explanation-title">地域振興</p>
-                        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-                        <a class="external-link" href="">詳しい課題内容はこちら</a>
-                    </div>
+            </div>
+        </section>
+        <section class="flow" id="#flow">
+            <div class="line-side maxw-740 lr-center">
+             <h2 class="size32 title-border">全体の流れ</h2>
+                <img src="source/flow.png" alt="全体の流れの画像">
+                <div class="flow_box">
+                    <h3 class="size28">アイデアソン</h3>
+                    <table class="table-day">
+                        <thead>
+                            <tr>
+                                <th></th><th>DAY1</th><th>DAY2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>千葉工業大学</th><td>8/5(月)</td><td>8/23(金)</td>
+                            </tr>
+                            <tr>
+                                <th>麗澤大学</th><td>8/6(火)</td><td>8/22(木)</td>
+                            </tr>
+                            <tr>
+                                <th>千葉大学</th><td>8/7(水)</td><td>8/21(水)</td>
+                            </tr>
+                    </tbody>
+                    <tfoot>
+                        <th>開催時間</th><td colspan="2">10:00~17:00<span class="annotation">※開場時間は9:30~です</span></td>
+                    </tfoot>
+                    </table>
+                </div>
+                <div class="flow_box">
+                    <h3 class="size28">ブラッシュアップ会</h3>
+                        <p>
+                            審査で選出されたチームはブラッシュアップ会を行います。<br>
+                            ブラッシュアップ会ではメンターと相談しながらより良いアイデアに磨き上げます。<br>
+                            アイデアそのものと、プレゼンについてのブラッシュアップがあります。
+                        </p>
+                        <dl>
+                            <dt>会場</dt>
+                            <dd class="size20">オンライン開催</dd>
+                        </dl>
+                </div>
+                <div class="flow_box">
+                    <h3 class="size28">発表会&emsp;交流会</h3>
+                        <p>参加者はアイデアソン後、発表会・交流会に参加できます。</p>
+                        <dl>
+                            <dt>日時</dt>
+                            <dd class="size20">2024/10/6(日) 13:00~17:00</dd>
+                            <dt>会場</dt>
+                            <dd class="size20">きぼーる</dd>
+                            <dd><span class="annotation">〒260-0013 千葉県千葉市中央区中央４丁目５−１</span></dd>
+                        </dl>
+                </div>
+                <div class="form">
+                    <h3 class="size28">申し込み</h3>
+                        <div class="form_container">
+                            <div class="btn">
+                                <a href="#" class="form-btn btn-black">申し込みはこちら</a>
+                            </div>
+                            <p>募集締切&ensp;&colon;&ensp;2024/8/XX(土)&emsp;23:59まで
+                            </p>
+                        </div>
                 </div>
             </div>
         </section>
-
+        <section class="company maxw-740 lr-center" id="#company">
+            <div class="line-side">
+                <h2 class="size32 title-border">主催</h2>
+                <p>千葉県</p>
+                <h2 class="size32 title-border">協賛</h2>
+                <ul class="list-company">
+                    <li>協賛企業</li>
+                    <li>協賛企業</li>
+                    <li>協賛企業</li>
+                    <li>協賛企業</li>
+                    <li>協賛企業</li>
+                    <li>協賛企業</li>
+                    <li>協賛企業</li>
+                    <li>協賛企業</li>
+                    <li>協賛企業</li>
+                    <li>協賛企業</li>
+                </ul>
+            </div>
+        </section>
     </main>
+    <footer>
+        <ul class="list-links">
+            <li><a href="https://civictech-lab.jp/" target="_blank"><img src="source/logo_CTL.png" alt="シビックテックラボのWEBサイトリンク"></a></li>
+            <li><a href="https://civictech-lab.jp/" target="_blank"><img src="source/logo_CTL.png" alt="シビックテックラボのWEBサイトリンク"></a></li>
+        </ul>
+        <div class="toiawase">
+            <p>イベントに関するお問い合わせ</p>
+            <a href="toiawase@mail.com">toiawase@mail.com</a>
+        </div>
+        <p><small>Copyright</small></p>
+    </footer>
 </body>
 </html>

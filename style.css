@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.pc{
+    display: block;
+}
+.sp{
+    display: none;
+}
+body{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #515151;
+}
+.maxw-740{
+    max-width: 740px;
+}
+.lr-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: #515151;
+}
+.size20{
+    font-size: 20px;
+}
+.size24{
+    font-size: 24px;
+    margin: 40px 20px 16px;
+}
+.size28{
+    font-size: 28px;
+}
+.size32{
+    font-size: 32px;
+}
+.size48{
+    font-size: 48px;
+    margin: 80px 0 40px;
+}
+.form-btn{
+    border-radius: 40px;
+    padding: 8px 20px;
+}
+.btn-yellow{
+    background-color: #D2DF38;
+    color: #515151;
+}
+.btn-black{
+    background-color: #515151;
+    color: #D2DF38;
+}
+.flex{
+    display: flex;
+}
+
+header{
+    background-color: #515151;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 4%;
+    margin: auto;
+}
+.header-menu{
+    display: flex;
+    align-items: center;
+}
+.header-menu li{
+    margin-right: 40px;
+}
+.header-menu li a{
+    color: #F5F5F5;
+}
+
+.hero_container-item{
+    flex: 1;
+}
+
+section{
+    padding: 80px 0;
+}
+.about{
+    background-color: #F5F5F5;
+}
