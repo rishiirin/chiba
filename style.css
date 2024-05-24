@@ -22,6 +22,9 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+img{
+    width: 100%;
+}
 ul{
     list-style-type: none;
     display: flex;
@@ -35,19 +38,66 @@ a{
 }
 .size24{
     font-size: 24px;
-    margin: 40px 20px 16px;
+    margin: 80px 20px 16px;
 }
 .size28{
     font-size: 28px;
+    margin: 40px 0 32px;
 }
 .size32{
     font-size: 32px;
+    margin: 80px 0 40px;
 }
 .size48{
     font-size: 48px;
-    margin: 80px 0 40px;
+    margin: 80px 0 80px;
+}
+
+.title-border{
+    border-bottom: 2px solid #515151;
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.title-border::before{
+    content: '';
+    background-color: #fff;
+    width: 30px;
+     height: 2px;
+     position: absolute;
+     left: 40px;
+     bottom: -2px;
+}
+.title-border::after{
+    content: '';
+    background-color: #515151;
+    width: 20px;
+    height: 2px;
+    transform: rotate(50deg);
+    position: absolute;
+    left: 35px;
+    bottom: -9px;
+}
+
+.title-circle::before{
+    content: '・';
+    padding: 10px;
+}
+
+.fixed-btn{
+    position: fixed;
+    bottom: 20%;
+    right: 4%;
+    padding: 10px;
+    max-width: 100px;
 }
 .form-btn{
+    border-radius: 30px;
+    padding: 15px 60px;
+    font-size: 20px;
+}
+.form-btn-small{
     border-radius: 40px;
     padding: 8px 20px;
 }
@@ -59,18 +109,25 @@ a{
     background-color: #515151;
     color: #D2DF38;
 }
+
 .flex{
     display: flex;
 }
+section{
+    margin: 80px 0;
+}
 
+/* ヘッダー */
 header{
     background-color: #515151;
     color: #F5F5F5;
     display: flex;
     justify-content: space-between;
-    height: 60px;
     padding: 0 4%;
     margin: auto;
+}
+header img{
+    max-width: 200px;
 }
 .header-menu{
     display: flex;
@@ -82,14 +139,161 @@ header{
 .header-menu li a{
     color: #F5F5F5;
 }
+/* -- */
 
+/* ヒーローエリア */
+.hero{
+    padding: 0;
+}
+.hero_container{
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 80px 4% ;
+}
 .hero_container-item{
-    flex: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
 }
+.hero_container-item h1{
+    margin: 0;
+}
+.lineart{
+    vertical-align: bottom;
+}
+/* -- */
 
-section{
-    padding: 80px 0;
-}
+/* 概要 */
 .about{
     background-color: #F5F5F5;
+    padding: 80px 0;
+}
+.kadai{
+    text-align: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+.kadai_container img{
+    max-width: 150px;
+}
+.kadai-explanation{
+    text-align: left;
+}
+.kadai-explanation p{
+     margin-bottom: 16px;
+}
+.explanation-title{
+    font-weight: bold;
+}
+.external-link{
+    text-align: right;
+}
+.after-icon::after{
+    content: '';
+    background-image: url(source/ExternalLink.png);
+    display: inline-block;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* -- */
+
+/* 全体の流れ */
+.flow_box{
+    border: solid 1px #515151;
+    margin-top: 40px;
+}
+.flow_box_container{
+    margin: 0 50px 80px;
+}
+.flow_box_container dl{
+    margin-top: 20px;
+}
+.flow_box_container .dl-item{
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
+}
+.annotation{
+    font-size: 16px;
+}
+.table-day{
+    text-align: left;
+    width: 100%;
+}
+.table-day th{
+ font-size: 20px;
+ vertical-align: bottom;
+ padding-right: 80px;
+}
+.table-day td{
+    font-size: 40px;
+    padding-top: 40px;
+}
+.border-bottom th,.border-bottom td{
+    border-bottom: solid 1px #515151;
+    border-collapse: collapse;
+    padding-bottom: 40px;
+}
+/* -- */
+
+/* 申し込み */
+.form{
+    margin-top: 80px;
+    background-image: url(source/light.svg);
+    background-repeat: no-repeat;
+}
+.form_container{
+    text-align: center;
+    margin-top: 80px;
+}
+.form_container p{
+    margin-top: 40px;
+}
+/* -- */
+
+/* 主催・協賛 */
+.list-company{
+    flex-wrap: wrap;
+    gap: 40px;
+}
+/* -- */
+
+/* フッター */
+footer{
+    background-color: #515151;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 20px 10% 40px;
+    margin-top: 80px;
+}
+footer a{
+    color: #D2DF38;
+    text-decoration: underline;
+}
+.list-links{
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.list-links img{
+    max-width: 300px;
+}
+.toiawase{
+    margin-bottom: 40px;
+}
+/* -- */
+
+
+/* ブレイクポイント */
+@media screen and (max-width:800px){
+
+    .lr-center{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
 }
