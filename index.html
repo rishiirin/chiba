@@ -19,7 +19,7 @@
     <main>
     <header>
         <img src="source/logo_wide_white.png" alt="千葉県オープンデータコネクテッドアイデアソンのロゴ（白）">
-        <nav class="header-menu">
+        <nav class="header-menu pc">
             <ul>
                 <li><a href="#about">概要</a></li>
                 <li><a href="#flow">全体の流れ</a></li>
@@ -29,11 +29,23 @@
                 <a href="#" class="form-btn-small btn-yellow">申し込みはこちら</a>
             </div>
         </nav>
-            <div class="openbtn">
-                <span></span>
-                <span></span>
-                <span></span>
-                </div>
+        <!--
+<!- ヘッダー sp ->
+    <div class="sp openbtn"><span></span><span></span><span></span>
+    <div class="sp sp-nav">
+      <ul>
+        <li><a href="#about">概要</a></li>
+        <li><a href="#flow">全体の流れ</a></li>
+        <li><a href="#company">主催・協賛</a></li>
+        <li><div class="btn">
+                <a href="#" class="form-btn-small btn-yellow">申し込みはこちら</a>
+            </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+  <!- ヘッダー sp END ->
+-->
     </header>
         <section class="hero">
             <div class="hero_container flex">
@@ -49,11 +61,13 @@
         </section>
         <section class="about" id="about">
             <div class="line-side maxw-740 lr-center">
-                
                 <h1 class="size48">千葉県オープンデータ<br>コネクテッドアイデアソン</h1>
-                <img src="source/video_block.png" alt="ダミー">
+                <div class="iframe-wrapper">
+                <iframe src="https://www.youtube.com/embed/TCVrq1vy0iE?si=v7FC3MRHM2_jzvgW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
                 <h4 class="size24">目的</h4>
-                <p>千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について千葉県オープンデータコネクテッドアイデアソンの目的について</p>
+                <p class="p-circle">千葉県内の学生がオープンデータを活用し地域の活性化や課題を解決するためのアイデアを豊富に生み出す。</p>
+                <p class="p-circle">検討されたアイデアが地域活性化や課題解決に繋がるよう、県内のネットワーク活動を行う。</p>
                 <h4 class="size24">解決してほしい課題</h4>
                 <div class="kadai flex">
                     <div class="kadai_container">

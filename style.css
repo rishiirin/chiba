@@ -67,10 +67,10 @@ a{
     content: '';
     background-color: #fff;
     width: 30px;
-     height: 2px;
+     height: 5px;
      position: absolute;
      left: 40px;
-     bottom: -2px;
+     bottom: -4px;
 }
 .title-border::after{
     content: '';
@@ -86,6 +86,10 @@ a{
 .title-circle::before{
     content: '・';
     padding: 10px;
+}
+
+.p-circle::before{
+    content: '・';
 }
 
 .fixed-btn{
@@ -170,6 +174,20 @@ header img{
     background-color: #F5F5F5;
     padding: 80px 0;
 }
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 .kadai{
     text-align: center;
     gap: 40px;
@@ -370,10 +388,84 @@ footer a{
 
 @media screen and (max-width:600px){
 
+    .about .size48{
+        font-size: 32px;
+    }
+
+   /*//////// hamburger */
+  .openbtn {
+    color: #333333;
+    position: fixed;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    right: 20px;
+  }
+  .openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #333;
+    width: 45%;
+  }
+  .openbtn span:nth-of-type(1) {
+    top: 15px;
+  }
+  .openbtn span:nth-of-type(2) {
+    top: 23px;
+  }
+  .openbtn span:nth-of-type(3) {
+    top: 31px;
+  }
+  .openbtn.active span {
+    background: #333;
+    z-index: 110;
+  }
+  .openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+  .openbtn.active .sp-nav {
+    display: block;
+    transform: translate(-100%, 0);
+  }
+  /*////////// sp nav */
+  .sp-nav {
+    position: fixed;
+    inset: 0 -100% 0 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 1);
+    transition: transform 0.3s;
+  }
+  .sp-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+  }
+
     .table-day th{
         font-size: 16px;
     }
     .table-day td{
         font-size: 24px;
     }
+    /*////////////*/
 }
