@@ -15,6 +15,9 @@ body{
     font-style: normal;
     color: #515151;
 }
+main{
+    position: relative;
+}
 .maxw-740{
     max-width: 740px;
 }
@@ -86,6 +89,7 @@ a{
 }
 
 .fixed-btn{
+    display: none;
     position: fixed;
     bottom: 20%;
     right: 4%;
@@ -142,9 +146,6 @@ header img{
 /* -- */
 
 /* ヒーローエリア */
-.hero{
-    padding: 0;
-}
 .hero_container{
     align-items: center;
     justify-content: center;
@@ -242,14 +243,28 @@ header img{
 /* -- */
 
 /* 申し込み */
-.form{
-    margin-top: 80px;
+/*.form{
+    padding: 80px 0;
     background-image: url(source/light.svg);
     background-repeat: no-repeat;
+    background-size: contain;
 }
+*/
+.form{
+    position: relative;
+    margin: 80px 0;
+}
+.light{
+    position: absolute;
+    z-index: -1;
+    top: -40vh;
+    right: 15%;
+    height: 100vh;
+    object-fit: contain;
+}
+
 .form_container{
     text-align: center;
-    margin-top: 80px;
 }
 .form_container p{
     margin-top: 40px;
@@ -292,8 +307,73 @@ footer a{
 /* ブレイクポイント */
 @media screen and (max-width:800px){
 
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+    p{
+        max-width: 650px;
+    }
+
     .lr-center{
         margin-left: 4%;
         margin-right: 4%;
+    }
+
+    .flex{
+        display: block;
+    }
+    
+    .hero_container-item{
+        max-width: 100%;
+    }
+
+    .hero-logo img{
+        max-width: 250px;
+        margin-bottom: 40px;
+    }
+
+    .kadai_container{
+        margin-top: 40px;
+    }
+
+    .flow_box_container{
+        margin: 0 20px 80px;
+    }
+    .table-day th{
+        padding-right: 40px;
+    }
+    .table-day td{
+        font-size: 32px;
+        padding-top: 30px;
+        padding-right: 20px;
+    }
+
+    .light{
+        top: -40vh;
+        right: 0px;
+        width: 2000px;
+        height: 100vh;
+        object-fit: contain;
+    }
+
+    .list-links{
+        display: block;
+        margin-bottom: 80px;
+    }
+    .list-links li{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .table-day th{
+        font-size: 16px;
+    }
+    .table-day td{
+        font-size: 24px;
     }
 }

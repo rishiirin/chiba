@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>千葉県オープンデータコネクテッドアイデアソン</title>
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +16,10 @@
 </head>
 
 <body>
+    <main>
     <header>
         <img src="source/logo_wide_white.png" alt="千葉県オープンデータコネクテッドアイデアソンのロゴ（白）">
-        <nav class="header-menu pc">
+        <nav class="header-menu">
             <ul>
                 <li><a href="#about">概要</a></li>
                 <li><a href="#flow">全体の流れ</a></li>
@@ -25,26 +29,27 @@
                 <a href="#" class="form-btn-small btn-yellow">申し込みはこちら</a>
             </div>
         </nav>
+            <div class="openbtn">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
     </header>
-    <main>
         <section class="hero">
             <div class="hero_container flex">
-                <div class="hero_container-item">
+                <div class="hero_container-item hero-logo">
                     <img src="source/logo_wide.png" alt="千葉県オープンデータコネクテッドアイデアソンのロゴ">
                 </div>
                 <div class="hero_container-item">
                     <h1 class="size48 catchcopy">繋がる・広がる<br>君のアイデアで</h1>
                 </div>
             </div>
-            <img class="lineart" src="source/top_lineart.png" alt="人々のラインアート">
+            <img class="lineart pc" src="source/top_lineart.png" alt="人々のラインアート">
+            <img class="lineart sp" src="source/top_lineart-sp.png" alt="人々のラインアート">
         </section>
         <section class="about" id="about">
             <div class="line-side maxw-740 lr-center">
-                <div class="fixed-btn">
-                    <a class="form-icon" href="#">
-                       <img src="source/icon_moushikomi.png" alt="申し込みフォームのアイコン">
-                    </a>
-                </div>
+                
                 <h1 class="size48">千葉県オープンデータ<br>コネクテッドアイデアソン</h1>
                 <img src="source/video_block.png" alt="ダミー">
                 <h4 class="size24">目的</h4>
@@ -135,8 +140,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="form">
+             <article class="form">
+                <img class="light" src="source/light.svg">
                     <div class="line-side maxw-740 lr-center">
                     <h3 class="size28">申し込み</h3>
                         <div class="form_container">
@@ -147,6 +152,7 @@
                             </p>
                         </div>
                     </div>
+        </article>
         </section>
         <section class="company maxw-740 lr-center" id="company">
             <div class="line-side">
@@ -167,7 +173,6 @@
                 </ul>
             </div>
         </section>
-    </main>
     <footer>
         <div class="maxw-740 lr-center">
         <ul class="list-links">
@@ -181,5 +186,13 @@
         <p><small>Copyright</small></p>
     </div>
     </footer>
+    <div class="pc">
+        <div class="fixed-btn">
+            <a class="form-icon" href="#">
+                <img src="source/icon_moushikomi.png" alt="申し込みフォームのアイコン">
+            </a>
+        </div>
+    </div>
+</main>
 </body>
 </html>
