@@ -137,14 +137,14 @@ header{
 header img{
     max-width: 200px;
 }
-.header-menu{
+.pc-nav{
     display: flex;
     align-items: center;
 }
-.header-menu li{
+.pc-nav li{
     margin-right: 40px;
 }
-.header-menu li a{
+.pc-nav li a:not(.btn-yellow){
     color: #F5F5F5;
 }
 /* -- */
@@ -258,16 +258,13 @@ header img{
     border-collapse: collapse;
     padding-bottom: 40px;
 }
+.tfoot th{
+    vertical-align: middle;
+}
+
 /* -- */
 
 /* 申し込み */
-/*.form{
-    padding: 80px 0;
-    background-image: url(source/light.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-*/
 .form{
     position: relative;
     margin: 80px 0;
@@ -343,6 +340,77 @@ footer a{
     .flex{
         display: block;
     }
+
+       /*//////// hamburger */
+  .openbtn {
+    color: #515151;
+    position: fixed;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    right: 20px;
+  }
+  .openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #515151;
+    width: 45%;
+  }
+  .openbtn span:nth-of-type(1) {
+    top: 15px;
+  }
+  .openbtn span:nth-of-type(2) {
+    top: 23px;
+  }
+  .openbtn span:nth-of-type(3) {
+    top: 31px;
+  }
+  .openbtn.active span {
+    background: #515151;
+    z-index: 110;
+  }
+  .openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+  .openbtn.active .sp-nav {
+    display: block;
+    transform: translate(-100%, 0);
+  }
+  /* sp nav */
+  .sp-nav {
+    position: fixed;
+    inset: 0 -100% 0 100%;
+    z-index: 100;
+    background-color: #F5F5F5;
+    transition: transform 0.3s;
+  }
+  .sp-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+  }
+/*////////////*/
+
     
     .hero_container-item{
         max-width: 100%;
@@ -392,80 +460,11 @@ footer a{
         font-size: 32px;
     }
 
-   /*//////// hamburger */
-  .openbtn {
-    color: #333333;
-    position: fixed;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    right: 20px;
-  }
-  .openbtn span {
-    display: inline-block;
-    transition: all .4s;
-    position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-    background: #333;
-    width: 45%;
-  }
-  .openbtn span:nth-of-type(1) {
-    top: 15px;
-  }
-  .openbtn span:nth-of-type(2) {
-    top: 23px;
-  }
-  .openbtn span:nth-of-type(3) {
-    top: 31px;
-  }
-  .openbtn.active span {
-    background: #333;
-    z-index: 110;
-  }
-  .openbtn.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
-  }
-  .openbtn.active span:nth-of-type(2) {
-    opacity: 0;
-  }
-  .openbtn.active span:nth-of-type(3) {
-    top: 30px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
-  }
-  .openbtn.active .sp-nav {
-    display: block;
-    transform: translate(-100%, 0);
-  }
-  /*////////// sp nav */
-  .sp-nav {
-    position: fixed;
-    inset: 0 -100% 0 100%;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 1);
-    transition: transform 0.3s;
-  }
-  .sp-nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    gap: 40px;
-  }
-
     .table-day th{
         font-size: 16px;
     }
     .table-day td{
         font-size: 24px;
     }
-    /*////////////*/
+    
 }

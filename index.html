@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>千葉県オープンデータコネクテッドアイデアソン</title>
-    <!-- js -->
-    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,19 +15,20 @@
 <body>
     <main>
     <header>
-        <img src="source/logo_wide_white.png" alt="千葉県オープンデータコネクテッドアイデアソンのロゴ（白）">
-        <nav class="header-menu pc">
+        <img class="pc" src="source/logo_wide_white.png" alt="千葉県オープンデータコネクテッドアイデアソンのロゴ（白）">
+        <nav class="pc pc-nav">
             <ul>
                 <li><a href="#about">概要</a></li>
                 <li><a href="#flow">全体の流れ</a></li>
                 <li><a href="#company">主催・協賛</a></li>
+                <li>
+                    <div class="btn">
+                        <a href="#" class="form-btn-small btn-yellow">申し込みはこちら</a>
+                    </div>
+                </li>
             </ul>
-            <div class="btn">
-                <a href="#" class="form-btn-small btn-yellow">申し込みはこちら</a>
-            </div>
         </nav>
-        <!--
-<!- ヘッダー sp ->
+    <!-- ヘッダー sp -->
     <div class="sp openbtn"><span></span><span></span><span></span>
     <div class="sp sp-nav">
       <ul>
@@ -44,8 +42,7 @@
       </ul>
     </div>
     </div>
-  <!- ヘッダー sp END ->
--->
+    <!-- ヘッダー sp END -->
     </header>
         <section class="hero">
             <div class="hero_container flex">
@@ -97,12 +94,12 @@
                     <h3 class="size28 title-circle">アイデアソン</h3>
                     <div class="flow_box_container">
                         <table class="table-day">
-                            <thead>
+                            <thead class="thead">
                                 <tr>
                                     <th></th><th>DAY1</th><th>DAY2</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="tbody">
                                 <tr>
                                     <th>千葉工業大学</th><td>8/5(月)</td><td>8/23(金)</td>
                                 </tr>
@@ -113,8 +110,13 @@
                                     <th>千葉大学</th><td>8/7(水)</td><td>8/21(水)</td>
                                 </tr>
                         </tbody>
-                        <tfoot>
-                            <th>開催時間</th><td colspan="2">10:00~17:00<span class="annotation">※開場時間は9:30~です</span></td>
+                        <tfoot class="tfoot">
+                            <tr>
+                            <th>開催時間</th><td colspan="2">10:00~17:00<br><span class="annotation">千葉大学のみ9:00~16:00</span></td>
+                            </tr>
+                            <tr>
+                                <th></th><td></td>
+                            </tr>
                         </tfoot>
                         </table>
                     </div>
@@ -208,5 +210,9 @@
         </div>
     </div>
 </main>
+<!--jQuery-->
+<script src="js/jquery-3.7.1.min.js"></script>
+<!-- js -->
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
