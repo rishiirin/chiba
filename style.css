@@ -193,6 +193,9 @@ header img{
     gap: 40px;
     margin-top: 40px;
 }
+.kadai_container{
+    width: 100%;
+}
 .kadai_container img{
     max-width: 150px;
 }
@@ -318,7 +321,7 @@ footer{
     color: #F5F5F5;
     text-align: center;
     padding: 20px 10% 40px;
-    margin-top: 80px;
+    margin-top: 160px;
 }
 footer a{
     color: #D2DF38;
@@ -339,28 +342,14 @@ footer a{
 
 
 /* ブレイクポイント */
-@media screen and (max-width:800px){
-
+@media screen and (max-width:1200px){
     .pc{
         display: none;
     }
     .sp{
         display: block;
     }
-    p{
-        max-width: 650px;
-    }
-
-    .lr-center{
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-
-    .flex{
-        display: block;
-    }
-
-       /* hamburger */
+     /* hamburger */
   .openbtn {
     color: #515151;
     position: fixed;
@@ -429,8 +418,30 @@ footer a{
     gap: 40px;
   }
 /*////////////*/
+.light{
+    top: -40vh;
+    right: 0px;
+    width: 200vw;
+    height: 100vh;
+    object-fit: cover;
+}
 
-    
+}
+@media screen and (max-width:800px){
+
+    p{
+        max-width: 650px;
+    }
+
+    .lr-center{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .flex{
+        display: block;
+    }
+
     .hero_container-item{
         max-width: 100%;
     }
@@ -459,9 +470,9 @@ footer a{
     .light{
         top: -40vh;
         right: 0px;
-        width: 2000px;
+        width: 400vw;
         height: 100vh;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .list-links{
