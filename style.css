@@ -261,7 +261,26 @@ header img{
 .tfoot th{
     vertical-align: middle;
 }
-
+/* アイデアソンのスケジュール */
+.ideathon-schedule{
+    margin-top: 40px;
+}
+.ideathon-schedule_container{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.ideathon-schedule_container p{
+    font-weight: bold;
+}
+/* -- */
+/* ブラッシュアップのスケジュール */
+.brushup-schedule{
+    margin-top: 40px;
+}
+.brushup-schedule_container{
+    margin-top: 20px;
+}
+/* -- */
 /* -- */
 
 /* 申し込み */
@@ -341,7 +360,7 @@ footer a{
         display: block;
     }
 
-       /*//////// hamburger */
+       /* hamburger */
   .openbtn {
     color: #515151;
     position: fixed;
