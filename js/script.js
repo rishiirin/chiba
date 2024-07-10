@@ -1,7 +1,7 @@
 $(function() {
 
     $(window).on("scroll", function() {
-        if( ($(this).scrollTop() > 500) & ($(this).scrollTop() < 4900) ) {
+        if( ($(this).scrollTop() > 500) & ($(this).scrollTop() < 6200) ) {
             $(".fixed-btn").fadeIn(100);
             } else {
             $(".fixed-btn").fadeOut(100);
