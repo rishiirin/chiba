@@ -285,6 +285,22 @@ header img{
     font-weight: bold;
 }
 /* -- */
+/* 発表の様子 */
+.presentation{
+    margin-top: 80px;
+}
+.presentation_container{
+    margin-top: 40px;
+}
+.presentation_container img{
+    object-fit: cover;
+    max-height: 400px;
+}
+.presentation_container iframe{
+    width: 100%;
+    max-height: 500px;
+}
+/* -- */
 /* ブラッシュアップのスケジュール */
 .brushup-schedule{
     margin-top: 40px;
@@ -475,6 +491,9 @@ footer a{
         padding-top: 30px;
         padding-right: 20px;
     }
+    .presentation_container{
+        margin-top: 30px;
+    }
 
     .light{
         top: -40vh;
@@ -505,5 +524,10 @@ footer a{
     .table-day td{
         font-size: 24px;
     }
+    /* 発表の様子 */
+    .presentation_container iframe{
+        max-height: 300px;
+    }
+    /* -- */
     
 }
