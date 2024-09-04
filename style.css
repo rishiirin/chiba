@@ -20,6 +20,13 @@ main{
     position: relative;
 }
 
+
+.maxw-150{
+    max-width: 150px;
+}
+.maxw-200{
+    max-width: 200px;
+}
 .maxw-740{
     max-width: 740px;
 }
@@ -27,6 +34,17 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
+
+.margin-bottom16{
+    margin-bottom: 16px;
+}
+.margin-bottom24{
+    margin-bottom: 24px;
+}
+.margin-bottom40{
+    margin-bottom: 40px;
+}
+
 img{
     width: 100%;
 }
@@ -38,11 +56,17 @@ a{
     text-decoration: none;
     color: #515151;
 }
+dt{
+    white-space: nowrap;
+}
+
+
 .size14{
     font-size: 14px;
 }
 .size20{
     font-size: 20px;
+    margin: 60px 0 24px;
 }
 .size24{
     font-size: 24px;
@@ -60,8 +84,15 @@ a{
     font-size: 48px;
     margin: 80px 0 80px;
 }
+.dl-item .size20{
+    margin: 0;
+}
+
 .weight-lighter{
     font-weight: 300;
+}
+.weight-bold{
+    font-weight: bold;
 }
 
 .title-border{
@@ -79,6 +110,9 @@ a{
      position: absolute;
      left: 40px;
      bottom: -4px;
+}
+.company .title-border::before{
+    background-color: #F5F5F5;
 }
 .title-border::after{
     content: '';
@@ -128,6 +162,15 @@ a{
 
 .flex{
     display: flex;
+}
+.width100{
+    width: 100%;
+}
+.gap8{
+    gap: 8px;
+}
+.gap40{
+    gap: 40px;
 }
 section{
     margin: 80px 0;
@@ -183,20 +226,6 @@ header img{
     padding: 80px 0;
     margin-top: 0;
 }
-.iframe-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .iframe-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 .kadai{
     text-align: center;
     gap: 40px;
@@ -249,6 +278,9 @@ header img{
     margin-top: 20px;
     gap: 40px;
 }
+.flow .size24{
+    margin-left: 0;
+}
 .annotation{
     font-size: 16px;
 }
@@ -285,23 +317,32 @@ header img{
     font-weight: bold;
 }
 /* -- */
-/* 発表の様子 */
-.presentation{
-    margin-top: 80px;
-}
-.presentation_container{
-    margin-top: 40px;
-}
-.presentation_container img{
-    object-fit: cover;
-    max-height: 400px;
-}
-.presentation_container iframe{
+
+/* 開催概要 */
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 16px;
+  }
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-height: 500px;
+    height: 100%;
 }
+
+.ideathon_hold_item{
+    margin: 24px 0 60px;
+}
+
 /* -- */
-/* ブラッシュアップのスケジュール */
+/* ブラッシュアップ */
+.brushup_content{
+    justify-content: center;
+}
 .brushup-schedule{
     margin-top: 40px;
 }
@@ -309,17 +350,24 @@ header img{
     margin-top: 20px;
 }
 /* -- */
+/* アイデアソンコンテスト＆交流会 */
+.judge_content{
+    margin-top: 24px;
+}
+
 /* -- */
 
 /* 申し込み */
 .form{
+    margin: 80px 40px;
+}
+.form-light{
     position: relative;
-    margin: 80px 0;
 }
 .light{
     position: absolute;
     z-index: -1;
-    top: -40vh;
+    top: -70vh;
     right: 15%;
     height: 100vh;
     object-fit: contain;
@@ -334,6 +382,11 @@ header img{
 /* -- */
 
 /* 主催・協賛 */
+.company{
+    background-color: #F5F5F5;
+    padding: 80px 0 160px;
+    margin: 0;
+}
 .list-company{
     flex-wrap: wrap;
     gap: 40px;
@@ -346,7 +399,7 @@ footer{
     color: #F5F5F5;
     text-align: center;
     padding: 20px 10% 40px;
-    margin-top: 160px;
+    margin: 0px;
 }
 footer a{
     color: #D2DF38;
@@ -444,12 +497,23 @@ footer a{
   }
 /*////////////*/
 .light{
-    top: -40vh;
+    top: -70vh;
     right: 0px;
     width: 200vw;
     height: 100vh;
     object-fit: cover;
 }
+
+.form-btn{
+    font-size: 16px;
+}
+dl{
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+
+}
+
 
 }
 @media screen and (max-width:800px){
@@ -465,6 +529,9 @@ footer a{
 
     .flex{
         display: block;
+    }
+    .brushup_content{
+        display: flex;
     }
 
     .hero_container-item{
@@ -496,7 +563,7 @@ footer a{
     }
 
     .light{
-        top: -40vh;
+        top: -70vh;
         right: 0px;
         width: 400vw;
         height: 100vh;
@@ -529,5 +596,9 @@ footer a{
         max-height: 300px;
     }
     /* -- */
+
+    .brushup_content{
+        gap: 20px;
+    }
     
 }
