@@ -338,6 +338,13 @@ header img{
     margin: 24px 0 60px;
 }
 
+.ideathon_hold_container .dl-item{
+    gap: 16px;
+    margin-top: 8px;
+}
+.ideathon_hold_container .external-link{
+    margin-top: 8px;
+}
 /* -- */
 /* ブラッシュアップ */
 .brushup_content{
