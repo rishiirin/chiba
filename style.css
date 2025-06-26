@@ -20,6 +20,11 @@ main{
     position: relative;
 }
 
+.endtext{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
 
 .maxw-150{
     max-width: 150px;
